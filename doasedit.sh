@@ -14,7 +14,7 @@
 set -e
 
 print_help() {
-	printf "Usage: $(basename ${0}) <file-to-edit>\n" >&2
+	printf "Usage: %s<file-to-edit>\n" "$(basename "${0}")" >&2
 }
 
 [ "${#}" -lt 1 ] &&	print_help && exit 1
@@ -99,7 +99,7 @@ if [ "$(realpath "${DOASEDIT_PATH}")" = "/etc/doas.conf" ]; then
 fi
 
 cat "${DOASEDIT_FILE}" > "${DOASEDIT_FILE_PIPE}"
-printf "File ${DOASEDIT_PATH}' has been updated.\n"
+printf "File '%s' has been updated.\n" "${DOASEDIT_PATH}"
 
 # Wait for the background process to finish
 wait "${DOASEDIT_FILE_PID}"
