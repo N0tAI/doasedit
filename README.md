@@ -12,4 +12,5 @@ compliant shell or operating system please report it. (currently only testing on
 
 ## Acknowledgement
 Thanks to the [Sudo Project](https://github.com/sudo-project/sudo) for the initial idea
+
 Thanks to repositories such as [TotallyLeGIT/doasedit](https://codeberg.org/TotallyLeGIT/doasedit) for helping me think through what I have to do
